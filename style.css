@@ -1,58 +1,92 @@
 body {
-    background-color: #FFF085;
-    margin: 0;
+  background-color: #fff085;
+  margin: 0;
 }
 
 .header {
-    width: 80%;
-    background-color: white;
-    margin: 20px auto;
-    border-radius: 15px;
+  width: 80%;
+  background-color: white;
+  margin: 20px auto;
+  border-radius: 15px;
 }
 
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 15px;
-    border: 3px solid black;
-    border-radius: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+  border: 3px solid black;
+  border-radius: 15px;
 }
 
 .navbar ul {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
 }
 
 .navbar ul li {
-    padding: 0 10px;
-    list-style: none;
+  padding: 0 10px;
+  list-style: none;
 }
 
 .navbar a {
-    text-decoration: none;
-    color: #000;
-    font-weight: bold;
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  transition: 0.3s ease-in-out;
 }
 
 .navbar .logo a {
-    font-size: 35px;
-    color: black;
+  font-size: 35px;
+  color: black;
 }
 
 .navbar .logo span {
-    color: #FF6900;
+  color: #ff6900;
 }
 
 .nav-button {
-    background-color: #FFD15B;
-    border-radius: 15px;
-    padding: 8px 12px;
+  background-color: #ffd15b;
+  border-radius: 15px;
+  padding: 8px 12px;
+  transition: all 0.3s;
+  position: relative;overflow: hidden;
 }
 
 .nav-button a {
-    color: black;
-    font-size: 17px;
+  color: black;
+  font-size: 17px;
+  box-shadow:
+    0 19px 38px rgba(0, 0, 0, 0.3),
+    0 15px 13px rgba(157, 130, 130, 0.22);
+    transition:color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: red;
+}
+
+.nav-button:hover {
+  transform: translateY(8px);
+  box-shadow:
+    0 19px 38px rgba(0, 0, 0, 0.3),
+    0 15px 13px rgba(0, 0, 0, 0.22);z-index: 3;color: white !important;
+}.nav-button:hover a {
+    color: white !important;
+}
+.nav-button::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 0, 0, 0.378);
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  transform: translateX(-100%);transition: all 0.3s;z-index: -1;
+}
+.nav-button:hover::before {
+  transform: translateX(0);
 }

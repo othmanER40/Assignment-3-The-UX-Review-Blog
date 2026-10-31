@@ -1,0 +1,52 @@
+/* Mobile */
+@media screen and (max-width: 480px) {
+  .xs-100 {
+    width: 100%;
+  }
+
+  .xs-50 {
+    width: 50%;
+  }
+
+
+}
+@media screen and (max-width: 768px) {
+  .sm-100 {
+    width: 100%;
+  }
+
+  .sm-50 {
+    width: 50%;
+  }
+
+  .sm-33 {
+    width: 33.33%;
+  }
+
+  /* Hide navigation on tablets and mobile screens */
+  .nav-links,
+  .nav-button {
+    display: none !important;
+  }
+  nav .bar {
+    background-color: black;
+    height: 4px;
+    width: 36px;
+    margin: 3px;
+    border: 10px;
+  }
+  .hamburger {
+    height: 50px;
+    width: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }  .hamburger:hover{cursor: pointer;}
+}
+
+/* flexxxx */
+.d-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
