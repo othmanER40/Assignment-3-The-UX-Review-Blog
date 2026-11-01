@@ -7,8 +7,10 @@
   .xs-50 {
     width: 50%;
   }
-
-
+  .hero-container {
+    display: flex;
+    flex-direction: column;
+  }
 }
 @media screen and (max-width: 768px) {
   .sm-100 {
@@ -42,7 +44,14 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  }  .hamburger:hover{cursor: pointer;}
+  }
+  .hamburger:hover {
+    cursor: pointer;
+  }  
+  .hero-container {
+    display: flex;
+    flex-direction: column;
+  }.hero-image{margin-top: 25px;width: 80%;}.hero-description{width: 100%;}.hero-title{width: 100%;font-size: 30px;}
 }
 
 /* flexxxx */
