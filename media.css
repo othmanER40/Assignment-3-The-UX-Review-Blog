@@ -95,7 +95,46 @@
   }
   .authors-container {
   display: flex;flex-direction: column;
+}.community-container {
+  display: flex;flex-direction: column;
+  width: 80%;
+  margin: auto;
 }
+  html, body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  /* Make main sections stretch full width */
+  .hero-section,
+  .articles-container,
+  .authors-container,
+  .community-container,
+  .articles-section,
+  .authors-section,
+  .community-section {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+
+  .hero-container,
+  .articles-container,
+  .authors-container,
+  .community-container {
+    flex-direction: column;
+  }
+
+  .articles-content,
+  .articles-sidebar,
+  .hero-image,
+  .author-card,
+  .community-description {
+    width: 90%;
+  }
+.benefit-item{
+width: 95%;}
 }
 
 /* flexxxx */
