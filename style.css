@@ -1,6 +1,7 @@
 body {
   background-color: #fff085;
   margin: 0;
+  font-family: "Roboto Condensed", sans-serif;
 }
 
 .header {
@@ -14,9 +15,21 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  width: 80%;
+  box-sizing: border-box;
+
   padding: 0 15px;
   border: 3px solid black;
   border-radius: 15px;
+
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  z-index: 1000;
+  background-color: white;
 }
 
 .navbar ul {
@@ -157,6 +170,7 @@ body {
   box-shadow: 6px 6px 0px #000;
   margin-bottom: 15px;
   transition: all 0.3s;
+  margin-bottom: 50px;
 }
 .btn-primary:hover {
   cursor: pointer;
@@ -171,6 +185,7 @@ body {
   box-shadow: 6px 6px 0px #000;
   margin-bottom: 15px;
   transition: all 0.3s;
+  margin-bottom: 50px;
 }
 .btn-secondary:hover {
   cursor: pointer;
@@ -195,6 +210,159 @@ body {
   z-index: 2;
   right: 0;
   top: 5%;
-  transform: translateX(60%);background-color: red;border: 1px solid black;font-size: 26px;  box-shadow: 6px 6px 0px #000;color: white;
+  transform: translateX(60%);
+  background-color: red;
+  border: 1px solid black;
+  font-size: 26px;
+  box-shadow: 6px 6px 0px #000;
+  color: white;
+}
 
+.articles-section {
+  background-color: #f5f5f5;
+  font-size: 20px;position: relative;
+}
+.articles-container {
+  width: 80%;
+  margin: 0px auto;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 50px;
+}
+.articles-header {
+  display: flex;
+  justify-content: space-between;
+}
+.articles-header h2 {
+  font-size: 40px;
+}
+.articles-header span {
+  background-color: #000;
+  color: white;
+  height: fit-content;
+  padding: 10px 16px;
+  rotate: 5deg;
+  font-size: 24px;
+}
+.article-card {
+  display: flex;
+  border: 5px solid rgb(1, 1, 1);
+  margin-bottom: 25px;
+  padding: 25px;
+  box-shadow:
+    6px 6px 0px #000,
+    6px 6px 10px #000;
+  transition: all 0.3s;
+}
+.article-card img {
+  width: 100%;
+  border: 3px solid black;margin-bottom: 15px;
+}
+.articles-content {
+  width: 70%;
+}
+.articles-sidebar {
+  width: 25%;
+}
+.article-image {
+  margin: auto 10px;
+  position: relative;
+  width: 25%;
+}
+.image-badge {
+  position: absolute;
+  top: 0;
+  right: 15%;
+  background-color: red;
+  color: white;
+  border: 1px solid black;
+  rotate: 5deg;
+}
+
+.category {
+  margin-top: 50px;
+  background-color: yellow;
+  border: 1px solid black;
+  box-shadow: 6px 6px 0px #000;
+  padding: 5px 7px;
+
+  height: fit-content;
+}
+.article-card:hover {
+  transform: translateY(5px);
+}
+.article-card:hover h3 {
+  color: red;
+}
+.load-more {
+  text-align: center;
+  padding: 15px 0;
+  transition: 0.3s;
+  margin-bottom: 50px;
+}
+.load-more a {
+  color: white;
+  background-color: black;
+  text-decoration: none;
+  padding: 8px 12px;
+  box-shadow: 6px 6px 0px #000;
+}
+.load-more:hover {
+  transform: translateY(5px);
+}
+.trending-box {
+  border: 5px solid black;
+  box-shadow: 6px 6px 0px #000;
+  padding-left: 15px;
+  position: sticky;
+}
+.trending-item {
+  display: flex;
+}
+.trending-number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+  font-size: 37px;
+  font-weight: bold;
+}
+.trending-item h4 {
+  font-size: 28px;
+}
+.categories-box {
+  border: 5px solid black;
+  box-shadow: 6px 6px 0px #000;
+  margin-top: 40px;
+  padding-left: 20px;
+}
+.category-item {
+  border: 1px solid black;
+  width: 90%;
+  margin-bottom: 15px;
+  padding: 8px;
+  font-weight: bold;transition: all 0.3s;
+}
+/* Categories Background Colors */
+
+.tech {
+    background-color: #fff9c4;
+}
+
+.design {
+    background-color: #d9fbe8;
+}
+
+.culture {
+    background-color: #f9e5f1;
+}
+
+.opinion {
+    background-color: #dceafe;
+}
+
+.tutorials {
+    background-color: #f0e4fc;
+}
+.category-item:hover{cursor: pointer;transform: translateY(-5px);  box-shadow: 6px 6px 0px #000;
 }
